@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.unordered {
+  height: 500px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+  overflow: auto;
+  
+
+
+}
+
+
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
