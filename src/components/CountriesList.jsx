@@ -19,7 +19,6 @@ export default function CountriesList(props) {
         </div>
       );
     }) }
-
     </ul>
     </div>
   )

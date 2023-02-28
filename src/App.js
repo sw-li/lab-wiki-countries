@@ -8,7 +8,6 @@ function App() {
   const [countries, setCountries] = useState(countriesData)
 
 
-
   return <div className="App">
     <Navbar></Navbar>
     <CountriesList countries={countries}></CountriesList>
