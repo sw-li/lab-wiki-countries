@@ -6,7 +6,7 @@ console.log(props)
   return (
     <div className="contianer">
         <ul className='unordered' >
-        {props.countries.map((country) => {
+        {props.countries && props.countries.map((country) => {
           return (
             <div className="list">
               <NavLink className="listItem" to={`/${country.alpha3Code}`}>

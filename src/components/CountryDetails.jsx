@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function CountryDetails(props) {
  const {foundCountry} = props
@@ -20,7 +21,7 @@ export default function CountryDetails(props) {
       </tr>
       <tr>
       <td className='heading'>Borders</td>
-      <td><ul>{foundCountry.borders.map(neighbor => <li>{neighbor}</li>)}</ul></td>
+      <td><ul>{foundCountry.borders.map(neighbor => <li><Link to={`/${neighbor}`}>{neighbor}</Link></li>)}</ul></td>
       </tr>
     </table>
 
