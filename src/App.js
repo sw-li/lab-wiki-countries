@@ -11,7 +11,7 @@ function App() {
   const [countries, setCountries] = useState(countriesData)
 
 
-  return <div>
+  return <div className="App">
     <Nav></Nav>
     <Routes>
         <Route path="/" element={<HomePage countries={countries}></HomePage>}></Route>

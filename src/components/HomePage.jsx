@@ -22,7 +22,7 @@ export default function HomePage(props) {
 
     </div>
     <div className='details'>
-    
+    {!foundCountry && <center><h2>Check out the countries to the left!</h2><br/><img src="https://frayedpassport.com/wp-content/uploads/2021/10/hermit-the-frog-road-trip.gif"></img></center>}
     {foundCountry && <CountryDetails foundCountry={foundCountry} />}
 
     </div>

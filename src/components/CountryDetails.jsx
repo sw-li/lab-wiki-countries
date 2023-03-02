@@ -7,6 +7,7 @@ export default function CountryDetails(props) {
  
   return (
     <div>
+    
           <h1>{foundCountry.name.official}</h1>
     <table>
       <tr>
