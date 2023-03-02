@@ -2,11 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default function CountriesList(props) {
+console.log(props)
   return (
     <div className="contianer">
-      <h1>Countries List</h1>
-
-      <ul className='unordered' >
+        <ul className='unordered' >
         {props.countries.map((country) => {
           return (
             <div className="list">

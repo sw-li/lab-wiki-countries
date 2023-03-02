@@ -1,49 +1,15 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container{
+.mainContainer{
   display: flex;
   flex-direction: row;
-}
+  gap: 30px;
+  padding-top: 30px;
+  }
 
 .unordered {
-  height: 500px;
+  height: 700px;
+  padding-left: 0;
 }
 
 .list {
@@ -51,11 +17,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
- 
-  overflow: auto;
-  
+   overflow: auto;
+   border: 1px #282c3434 solid
+  }
 
+  .list a {
+    text-decoration: none;
+    color: black;
+  }
 
+.list img {
+  width: 40px;
 }
 
 
@@ -65,4 +37,37 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 20px;
+  padding: 10px;
+  width: 100%;
+  
 }
+h1 {
+  text-align: left;
+}
+
+td {
+  width: 500px;
+  text-align: left;
+  vertical-align: top;
+  padding: 20px;
+
+}
+ .heading {
+  width: 150px;
+ }
+
+table tr {  border-top: 1px;
+  border-style: solid;
+  border-color:#282c3434
+  
+}
+
+.listItem:hover { background-color: rgb(189, 187, 187);
+
+}
+
+.details {
+  width: 700px
+}
+
+
